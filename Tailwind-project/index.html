@@ -22,21 +22,68 @@
 
   <main class="container mx-auto">
     <!-- Hero Section -->
-    <header class="w-full h-[650px] bg-cover bg-center flex items-center justify-center text-center"
-      style="background-image: url('https://i.ibb.co.com/7K3L0th/pexels-olly-3769747.jpg');">
-      <div class="bg-black bg-opacity-50 p-8 rounded-lg">
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
-          Welcome to Your Dream Destination
-        </h1>
-        <p class="text-lg md:text-xl text-gray-200 mb-6">
-          Discover the best adventures and unforgettable experiences.
-        </p>
-        <a href="#explore"
-          class="bg-blue-500 text-white px-4 py-1 lg:px-6 py-3 rounded-lg text-sm lg:text-lg font-medium hover:bg-blue-600 transition">
-          Explore Now
-        </a>
+    <div class="bg-gray-100 p-6">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <!-- Left Offers -->
+        <div class="flex flex-col space-y-6">
+          <!-- First Offer -->
+          <div class="bg-blue-100 p-6 rounded-lg shadow-md relative text-center">
+            <h4 class="text-sm font-bold text-blue-800">NOVEMBER'S GADGET MADNESS</h4>
+            <p class="text-2xl font-semibold text-blue-800">20% OFF</p>
+            <button class="mt-4 px-4 py-2 bg-yellow-400 text-white font-bold rounded-full hover:bg-yellow-500">
+              Get Offer
+            </button>
+          </div>
+          <!-- Second Offer -->
+          <div class="relative bg-gray-100 p-6 rounded-lg shadow-md text-center overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+              <img src="https://i.ibb.co/MZPHyYn/Rectangle-5.png" alt="Background" class="w-full h-full object-cover">
+            </div>
+            <!-- Content Overlay -->
+            <div class="relative z-6 text-white p-8">
+              <!-- Headline 1 -->
+              <h4 class="text-sm text-[#00142E] font-bold">Cyber Monday Special</h4>
+              <!-- Headline 2 -->
+              <h2 class="text-xl md:text-xl text-[#00142E] font-semibold mt-2">Home Appliances</h2>
+              <!-- Photo Below Headlines -->
+              <div class="mt-4">
+                <img src="https://i.ibb.co.com/HXrLgTK/pngegg-1.png" alt="Product Photo" class="mx-auto">
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        <!-- Main Fashion Deals Section -->
+        <div class="col-span-2 bg-blue-200 relative rounded-lg overflow-hidden flex items-center">
+          <!-- Background Image -->
+          <img src="https://via.placeholder.com/600x400" alt="Winter Fashion"
+            class="absolute inset-0 w-full h-full object-cover opacity-50">
+          <!-- Content -->
+          <div class="relative z-10 p-8 md:p-12 lg:p-16">
+            <h4 class="text-sm font-bold uppercase">Winter 2024 Offer</h4>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+              Grab the best <br> fashion deals in <br> this winter
+            </h2>
+            <div class="flex items-center mt-4 space-x-3">
+              <span class="px-3 py-1 bg-white text-sm font-semibold rounded-full shadow-md flex items-center">
+                <img src="https://via.placeholder.com/20" alt="Cotton Icon" class="w-5 h-5 mr-2">
+                95% Cotton Made
+              </span>
+            </div>
+            <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900">
+              Get Deals
+            </button>
+          </div>
+        </div>
       </div>
-    </header>
+
+    </div>
+
 
     <!-- Product Grid use here -->
     <section class="py-16">
