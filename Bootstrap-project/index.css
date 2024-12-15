@@ -36,3 +36,27 @@
       background-color: #0056b3;
       transform: scale(1.1);
     }
+
+
+    /* for navbar */
+    .navbar-custom {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .custom-icon-btn {
+      background-color: transparent;
+      border: none;
+      color: #004d40;
+      font-size: 1.2rem;
+    }
+
+    .search-input {
+      border: 1px solid #ddd;
+      border-radius: 0.25rem;
+    }

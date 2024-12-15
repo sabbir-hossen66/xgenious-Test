@@ -18,42 +18,55 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <!-- "E-commerce" on the left side -->
-        <a class="navbar-brand" href="#">E-commerce</a>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <!-- Logo and Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://via.placeholder.com/30" alt="Logo" class="me-2">
+        <span class="fw-bold text-success">SafeCart</span>
+      </a>
 
-        <!-- Navbar toggle button for smaller devices -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Toggler for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Navbar content -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-          <!-- Links centered in the navbar -->
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#products">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Categories -->
+        <ul class="navbar-nav me-3">
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">
+              <i class="bi bi-list me-1"></i> Categories
+            </a>
+          </li>
+        </ul>
 
-        <!-- Search form on the right side -->
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- Search Bar -->
+        <form class="d-flex w-50" role="search">
+          <input class="form-control search-input me-2" type="search" placeholder="Search an item..."
+            aria-label="Search">
+          <button class="btn custom-icon-btn" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
         </form>
+
+        <!-- Icons -->
+        <div class="ms-auto d-flex">
+          <button class="btn custom-icon-btn">
+            <i class="bi bi-heart"></i>
+          </button>
+          <button class="btn custom-icon-btn">
+            <i class="bi bi-person"></i>
+          </button>
+          <button class="btn custom-icon-btn">
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <main>
     <section>
@@ -67,7 +80,7 @@
               <div class="card-body">
                 <h5 class="card-title">Product 1</h5>
                 <p class="card-text">$29.99</p>
-                <a href="#" class="btn btn-buy   buy-now-btn">Buy Now</a>
+                <a href="#" class="btn btn-buy buy-now-btn">Buy Now</a>
               </div>
             </div>
           </div>
@@ -140,38 +153,77 @@
       </div>
     </section>
   </main>
-  <!-- Footer Section -->
-  <footer class="bg-dark text-white py-4">
+
+  <footer style="background-color: #00192B" class="text-white py-5">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <h5>Follow Us</h5>
-          <ul class="list-unstyled d-flex justify-content-center">
-            <li class="ms-3">
-              <a href="https://www.facebook.com" target="_blank" class="text-white">
-                <i class="bi bi-facebook" style="font-size: 2rem;"></i>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a href="https://www.twitter.com" target="_blank" class="text-white">
-                <i class="bi bi-twitter" style="font-size: 2rem;"></i>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a href="https://www.instagram.com" target="_blank" class="text-white">
-                <i class="bi bi-instagram" style="font-size: 2rem;"></i>
-              </a>
-            </li>
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-3">Location</h5>
+          <p>📍 New York, NY, USA</p>
+          <h5 class="fw-bold mb-3">Have a question?</h5>
+          <p>📞 324-094-3233</p>
+          <h5 class="fw-bold mb-3">Contact us at</h5>
+          <p>📧 <a href="mailto:safecart@email.com" class="text-decoration-none text-secondary">safecart@email.com</a>
+          </p>
+        </div>
+
+        <!-- Shop Links -->
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-3">Shop</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none">Shop</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">My Orders</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">My Account</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Track My Order</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Return Policy</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Refund Policy</a></li>
           </ul>
         </div>
-      </div>
-      <div class="row text-center mt-3">
-        <div class="col-12">
-          <p>&copy; 2024 Your Company. All rights reserved.</p>
+
+        <!-- Categories Links -->
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-3">Categories</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none">Gadget Items</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Fashion & Wear</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Home Appliances</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Pet Foods</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Surveillance Cameras</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Monitors</a></li>
+          </ul>
         </div>
+
+        <!-- About Links -->
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold mb-3">About</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-secondary text-decoration-none">About us</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Help</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Contact us</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Privacy policy</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Newsletter</h5>
+          <p>Be the first one to know about discounts, offers, and events. Unsubscribe whenever you like.</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control rounded-pill" placeholder="Enter your email">
+              <button type="submit" class="btn btn-light text-dark rounded-pill">Submit</button>
+            </div>
+          </form>
+        </div>
+
+
       </div>
     </div>
   </footer>
+
 
   <!-- Bootstrap Icons CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
