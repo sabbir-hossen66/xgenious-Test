@@ -22,7 +22,7 @@
 
   <main class="container mx-auto">
     <!-- Hero Section -->
-    <div class="bg-gray-100 p-6">
+    <div class="p-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Left Offers -->
         <div class="flex flex-col space-y-6">
@@ -64,7 +64,7 @@
               <!-- Headline 1 -->
               <h4 class="text-sm md:text-base font-bold text-[#00142E]">Cyber Monday Special</h4>
               <!-- Headline 2 -->
-              <h2 class="text-lg md:text-xl font-semibold text-[#00142E] mt-2">Home Appliances</h2>
+              <h2 class="text-lg md:text-xl uppercase font-semibold text-[#00142E] mt-2">Home Appliances</h2>
               <!-- Photo Below Headlines -->
               <div class="mt-4">
                 <img src="https://i.ibb.co.com/HXrLgTK/pngegg-1.png" alt="Product Photo" class="mx-auto">
@@ -74,27 +74,50 @@
         </div>
 
         <!-- Main Fashion Deals Section -->
-        <div class="col-span-1 md:col-span-2 bg-blue-200 relative rounded-lg overflow-hidden flex items-center">
+        <div
+          class="col-span-1 md:col-span-2 bg-blue-200 relative rounded-lg overflow-hidden flex flex-col md:flex-row items-center">
           <!-- Background Image -->
-          <img src="https://via.placeholder.com/600x400" alt="Winter Fashion"
-            class="absolute inset-0 w-full h-full object-cover opacity-50">
+          <img src="https://i.ibb.co.com/pjPfGD0/Rectangle-2.png" alt="Winter Fashion"
+            class="absolute inset-0 w-full h-full object-cover">
+
           <!-- Content -->
-          <div class="relative z-10 p-6 md:p-12 lg:p-16 text-center md:text-left">
-            <h4 class="text-sm font-bold uppercase">Winter 2024 Offer</h4>
-            <h2 class="text-xl md:text-3xl lg:text-5xl font-bold text-gray-800 leading-tight">
-              Grab the best <br> fashion deals in <br> this winter
-            </h2>
-            <div class="flex justify-center md:justify-start items-center mt-4 space-x-3">
-              <span class="px-3 py-1 bg-white text-sm font-semibold rounded-full shadow-md flex items-center">
-                <img src="https://via.placeholder.com/20" alt="Cotton Icon" class="w-5 h-5 mr-2">
-                95% Cotton Made
-              </span>
+          <div
+            class="flex flex-col md:flex-row justify-center relative z-10 p-6 md:p-12 lg:p-16 text-center md:text-left w-full">
+            <!-- Text and Button Section -->
+            <div class="w-full md:w-1/2 mb-6 md:mb-0">
+              <h4 class="text-sm font-bold uppercase">Winter 2024 Offer</h4>
+              <h2 class="text-xl md:text-3xl lg:text-5xl font-bold text-gray-800 leading-tight">
+                Grab the best <br> fashion deals in <br> this winter
+              </h2>
+              <div class="flex items-center gap-4 mt-9 justify-center md:justify-start">
+                <!-- Inactive Dot 1 -->
+                <div class="w-4 h-2 bg-white/50 rounded-full"></div>
+
+                <!-- Inactive Dot 2 -->
+                <div class="w-4 h-2 bg-white/50 rounded-full"></div>
+
+                <!-- Active Dot -->
+                <div class="w-12 h-2 bg-white rounded-full"></div>
+
+                <!-- Inactive Dot 3 -->
+                <div class="w-4 h-2 bg-white/50 rounded-full"></div>
+
+                <!-- Inactive Dot 4 -->
+                <div class="w-4 h-2 bg-white/50 rounded-full"></div>
+              </div>
+              <button class="mt-6 px-9 py-2 bg-[#0C1230] text-white rounded-full hover:bg-gray-900">
+                Get Deals
+              </button>
             </div>
-            <button class="mt-6 px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900">
-              Get Deals
-            </button>
+
+            <!-- Image Section -->
+            <div class="w-full md:w-1/2 flex justify-center items-center">
+              <img src="https://i.ibb.co.com/zJy3RWc/5281687-1.png" alt="Cotton Icon"
+                class="w-[300px] h-[300px] md:w-[510px] md:h-[500px]">
+            </div>
           </div>
         </div>
+
       </div>
     </div>
 
