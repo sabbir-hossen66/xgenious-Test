@@ -3,6 +3,11 @@
       background-color: #f9f9f9;
     }
 
+    .contact-bar {
+      background-color: #001e2b;
+      color: white;
+    }
+
     .product-card {
       background-color: #ffffff;
       border-radius: 10px;
@@ -40,4 +45,10 @@
     /* ratting color */
     .text-custom-warning {
       color: #FFC436 !important;
+    }
+
+    @media (max-width: 767px) {
+      .small-text {
+        font-size: 8px !important;
+      }
     }
